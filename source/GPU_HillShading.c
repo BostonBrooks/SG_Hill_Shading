@@ -212,14 +212,14 @@ int calcHillShading(sfRenderTexture* in, int square_i, int square_j){
 
 	sfShader_setIntUniform(hillShadingStates->shader, "square_x", square_j);
 	sfShader_setIntUniform(hillShadingStates->shader, "square_y", square_i);
-	sfSprite* sprite = sfSprite_create();
-	sfSprite_setTexture(sprite, hillShadingStates->texture, sfTrue);
+	//sfSprite* sprite = sfSprite_create();
+	//sfSprite_setTexture(sprite, hillShadingStates->texture, sfTrue);
 
 
 	sfRenderTexture_drawSprite(in, nullSprite, hillShadingStates);
 
 	sfRenderTexture_display(in);
-	sfSprite_destroy(sprite);
+	//sfSprite_destroy(sprite);
 
 
 	return 0;
