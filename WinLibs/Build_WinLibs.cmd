@@ -26,6 +26,7 @@ gcc -D SFML_STATIC^
   ../source/sum_forces.c^
   ../source/viewport.c^
   ../source/window.c^
+  ../source/GPU_HillShading.c^
   -lcsfml-system -lcsfml-graphics -lcsfml-window -g -w -lm
 a.exe
 
